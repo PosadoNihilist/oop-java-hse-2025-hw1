@@ -42,9 +42,4 @@ public class Sugar {
     public void setSugarPrice(double sugarPrice) {
         this.sugarPrice = sugarPrice;
     }
-
-     public String getSugarDescription() {
-         // Напишите код здесь, возвращая текстовое описание уровня сахара
-         return "Sugar level: " + sugarLevel;
-     }
 }

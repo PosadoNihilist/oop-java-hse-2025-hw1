@@ -47,7 +47,7 @@ public class Coffee {
 
 
      public double calculatePriceWithSugar(Sugar sugar) {
-         return basePrice + sugar.getSugarPrice();
+        return Math.round((basePrice + sugar.getSugarPrice()) * 100.0) / 100.0;
      }
 
     // public String toString() {
