@@ -17,17 +17,38 @@
  */
 public class Coffee {
     // Напишите код здесь (объявление полей)
+    private String name;
+    private double basePrice;
 
     // Напишите код здесь (конструктор/конструкторы)
 
+    public Coffee(String name, double basePrice) {
+        this.name = name;
+        this.basePrice = basePrice;
+    }
+
     // Напишите код здесь (геттеры/сеттеры)
 
-    // public double calculatePriceWithSugar(Sugar sugar) {
-    //     // Напишите код здесь:
-    //     // Пример:
-    //     // double finalPrice = basePrice + sugar.getSugarPrice();
-    //     // return finalPrice;
-    // }
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public double getBasePrice() {
+        return basePrice;
+    }
+
+    public void setBasePrice(double basePrice) {
+        this.basePrice = basePrice;
+    }
+
+
+     public double calculatePriceWithSugar(Sugar sugar) {
+        return Math.round((basePrice + sugar.getSugarPrice()) * 100.0) / 100.0;
+     }
 
     // public String toString() {
     //     // Напишите код здесь (опционально)
